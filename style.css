@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+
+:root {
+    --backgrond: #000;
+    --text-color: #fff;
+    --button: #8257e5;
+    --border: #29292e;
+    --border-menu-mobile: #a8a8b3;
+    --text-color-menu-mobile: #e1e1e6;
+}
+
+.invisible {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--backgrond);
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+#menu img {
+    margin-left: 150px;
+}
+
+#menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#menu-list li {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#menu-list li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#menu button {
+    border: 2px solid var(--button);
+    background-color: var(--backgrond);
+    border-radius: 6px;
+    width: 200px;
+    height: 40px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+main {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--text-color);
+
+    margin: 0 auto;
+}
+
+#container h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+        -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+#container img {
+    height: 100%;
+}
+
+#blur-images {
+    width: 100vw;
+}
+
+#blurOne {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#blurTwo {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
