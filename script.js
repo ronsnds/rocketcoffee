@@ -9,8 +9,8 @@ function closeMenu() {
     menuBuguerOpen.classList.remove("invisible");
     menuBuguerClose.classList.add("invisible");
 
-    document.getElementById('menu-list').style.display = 'none'
-    document.querySelector('main').style.display = 'block'
+    document.getElementById("menu-list").style.display = "none";
+    document.querySelector("main").style.display = "block";
 
     count = 0;
 }
@@ -19,8 +19,8 @@ function openMenu() {
     menuBuguerOpen.classList.add("invisible");
     menuBuguerClose.classList.remove("invisible");
 
-    document.getElementById('menu-list').style.display = 'flex'
-    document.querySelector('main').style.display = 'none'
+    document.getElementById("menu-list").style.display = "flex";
+    document.querySelector("main").style.display = "none";
 
     count++;
 }
