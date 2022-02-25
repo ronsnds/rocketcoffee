@@ -193,7 +193,7 @@ main {
         position: absolute;
         margin-top: 370px;
 
-        transition: ease-in-out 2s linear;
+        transition: ease 2s;
 
         display: none;
     }
