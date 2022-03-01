@@ -9,10 +9,6 @@
     --text-color-menu-mobile: #e1e1e6;
 }
 
-.invisible {
-    display: none;
-}
-
 .button-take {
     border: 2px solid var(--button);
     background-color: var(--backgrond);
@@ -30,6 +26,10 @@
     justify-content: center;
 
     gap: 1em;
+}
+
+#menu-list {
+    display: none;
 }
 
 * {
@@ -70,7 +70,7 @@ header {
     display: none;
 }
 
-#menu-list {
+#menu-list-main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,12 +79,14 @@ header {
     transition: ease-in-out 2s linear;
 }
 
+#menu-list-main li,
 #menu-list li {
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
 
+#menu-list-main li a,
 #menu-list li a {
     text-decoration: none;
     color: var(--text-color);
@@ -112,20 +114,17 @@ main {
     height: 100%;
 }
 
-#container h1 {
-    font-family: "Manrope", sans-serif;
-    font-size: 80px;
-    font-weight: 700;
-    color: var(--text-color);
+#container h1,
+#container h2 {
+    font: 700 6rem "Manrope", sans-serif;
+}
 
+#container h1 {
+    color: var(--text-color);
     margin: 1rem auto;
 }
 
 #container h2 {
-    font-family: "Manrope", sans-serif;
-    font-size: 80px;
-    font-weight: 700;
-
     text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
         -1px 1px 0 var(--button), 1px 1px 0 var(--button);
 }
@@ -158,6 +157,10 @@ main {
 }
 
 @media (max-width: 1150px) {
+    .invisible {
+        display: none;
+    }
+
     #container h1,
     #container h2 {
         font-size: 60px;
@@ -169,7 +172,7 @@ main {
         justify-content: space-evenly;
     }
 
-    #menu-list {
+    #menu-list-main {
         gap: 0.5rem;
         min-width: 360px;
     }
@@ -186,6 +189,10 @@ main {
 }
 
 @media (max-width: 600px) {
+    #menu-list-main {
+        display: none;
+    }
+
     header {
         width: 100%;
         transition: ease 2s linear;
@@ -271,12 +278,10 @@ main {
     }
 
     #container-mobile h3 {
-        font-family: "Manrope", sans-serif;
-        font-size: 30px;
-        font-weight: 700;
+        font: 700 2rem "Manrope", sans-serif;
         color: var(--text-color);
         text-align: center;
-        width: 55%;
+        width: 75%;
         margin-top: 4rem;
     }
 
@@ -327,13 +332,8 @@ main {
     }
 
     #container-mobile h3 {
-        font-family: "Manrope", sans-serif;
-        font-size: 30px;
-        font-weight: 700;
-        color: var(--text-color);
-        text-align: center;
-        width: 75%;
-        margin-top: 4rem;
+        width: 55%;
+        font-size: 1.9rem;
     }
 
     #container-mobile #take {
