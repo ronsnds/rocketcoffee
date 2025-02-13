@@ -1,5 +1,5 @@
 # RocketCoffee
-![[rocketcoffee.png]]
+![Visualização do projeto](rocketcoffee.png)
 ## Desafio
 **Desenvolver uma homepage para uma marca de café.**
 ## Tecnologias
